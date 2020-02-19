@@ -22,14 +22,15 @@ do
     
     again = window.prompt("repeat entry? (y/n)");
 
-        if(again == "y")
+        if(again === "y")
         {
         continue;
         }
 
-        else if(again == "n")
+        else if(again === "n")
         {
         running = false;
+        break;
         }
 
     else
@@ -39,14 +40,15 @@ do
 
         again = window.prompt("invalid entry. repeat calculation? (y/n)");
             
-        if(again == "y")
+        if(again === "y")
             {
                 break;
             }
 
-            else if(again == "n")
+            else if(again === "n")
             {
                 running = false;
+                break;
             }
         }
     }
@@ -54,3 +56,4 @@ do
 while(running); 
 
 window.document.write("Drive safe");
+
